@@ -55,9 +55,9 @@ public class FundacionesDAO {
         String Password = j.getPassword();
                         
                             
-        String sql = "INSERT INTO fundaciones (Nombre, Direccion, Email, Representante, URL,Telefono, Fundacionescol, Username, Password) VALUES ('"+Nombre+"', '"+Direccion+"', '"+Email+"', '"+Representante+"', '"+URL+"', '"+Telefono+"', '"+Fundacionescol+"', '"+Username+"', '"+Password+"') ";
-        //System.out.println(sql);
-        ResultSet rs = con.ejecutarUpdate(sql);
+        String sql = "INSERT INTO fundaciones (Nombre, Direccion, Email, Representante, URL, Telefono, Fundacionescol, Username, Password) VALUES ('"+Nombre+"', '"+Direccion+"', '"+Email+"', '"+Representante+"', '"+URL+"', '"+Telefono+"', '"+Fundacionescol+"', '"+Username+"', '"+Password+"') ";
+        System.out.println(sql);
+        ResultSet rs = con.ejecutarInsert(sql);
         int id = 0;
         try {
             if (rs.next()){

@@ -31,6 +31,19 @@ public class ColeccionFundaciones {
         }
     } 
     
-    
+    public boolean guardarFundacion (Fundaciones j){
+
+	FundacionesDAO dao= new FundacionesDAO();
+	int id =dao.guardarNuevaFundacion(j);
+   	if (id > 0){
+
+		return true;
+	}
+	else {
+		return false;
+	}
+
+
+}
     
 }

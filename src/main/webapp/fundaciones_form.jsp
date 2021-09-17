@@ -50,6 +50,16 @@ Crear una Nueva Fundación
 <form method="POST" action="fundaciones_ctrl.jsp">
 
     <div class="form-row ">
+        
+        <!-- AQUI ME FALTA EL ID OJO -->
+        <div class="col md-2">
+            <div class="p-2" >
+            <label for="txtId" > Id:<span class="red">*</span></label>
+            <input type="text" class="form-control" id="txtId" name="txtId" disabled>
+            </div> 
+        </div> 
+        
+        
         <div class="col">
             <div class="p-2" >
             <label for="txtNombre" > Nombre:<span class="red">*</span></label>
@@ -123,10 +133,10 @@ Crear una Nueva Fundación
             <label >Tipo de Fundación:<span class="red">*</span></label>
             <select class="custom-select"  required>
                 <option selected disabled value="">Selecciona el tipo</option>
-                <option value="Tipo 1">Sociales</option>
-                <option value="Tipo 2">Benéficas</option>
-                <option value="Tipo 3">Tipo 3</option>
-                <option value="Otras">Otras</option>
+                <option value="1">Sociales</option>
+                <option value="2">Ambientales</option>
+                <option value="3">Culturales</option>
+                <option value="4">Otras</option>
             </select>
             </div>
         </div>

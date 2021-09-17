@@ -4,7 +4,10 @@
     Author     : E5-473
 --%>
 
+<%@page import="javax.swing.JOptionPane"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="logica.ColeccionFundaciones" %>
+<%@page import="logica.Fundaciones" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,24 +20,40 @@
     <body>
         <%
             
-            //String id = request.getParameter("txtId");
+            String id = request.getParameter("txtId");
             String Nombre = request.getParameter("txtNombre");
             String Direccion = request.getParameter("txtDireccion");
             String Email = request.getParameter("txtEmail");
             String Representante = request.getParameter("txtRepresentante");
             String Url = request.getParameter("txtUrl");
             String Telefono = request.getParameter("txtTelefono");
+            String Fundacionescol = request.getParameter("txtFundacionescol");
             String Username = request.getParameter("txtUsername");
             String Password = request.getParameter("txtPassword");
             
-            //String accion = request.getParameter("btnSubmit");
+            String accion = request.getParameter("btnSubmit");
+            
+            if (accion.equals("nuevo")){
+
+                Fundaciones j = new Fundaciones (Nombre, Direccion, Email, Representante, Url, Telefono, Fundacionescol, Username, Password);
+                ColeccionFundaciones coleccion= new ColeccionFundaciones();
+                boolean guardado = coleccion.guardarFundacion(j);
+                if (guardado == true) {
+                    
+                        // JOptionPane.showMessageDialog(null, "Información guardada con éxito !");
+                    out.println("Nueva Fundacion guardada con éxito");
+                }
+                else {
+                     //JOptionPane.showMessageDialog(null, "Información  NO guardada  !");
+                    out.println("Información de fundación no guardada");
+		}
+            }
             
             
-            
-            out.println ("Los datos enviados fueron: Nombre: \n"+Nombre+" Direccion: \n"+Direccion+ " Email: "+Email+" Representante: "+Representante+" Url: "+Url+" Telefono: "+Telefono+" Usuario: "+Username+" Contraseña: "+Password);
+            //out.println ("Los datos enviados fueron: Nombre: \n"+Nombre+" Direccion: \n"+Direccion+ " Email: "+Email+" Representante: "+Representante+" Url: "+Url+" Telefono: "+Telefono+" Usuario: "+Username+" Contraseña: "+Password);
         %>
         <div>
-        <button class="btn btn-primary" type="submit" id="btnSubmit" name="btnSubmit" value="nuevo" action="href://fundaciones_form.jsp">Regresar</button>
+            <a href=fundaciones_form.jsp> <button class="btn btn-primary" type="submit" id="btnSubmit" name="btnSubmit" value="regresar" >Regresar</button></a><!-- comment -->
         </div>
         </body>
 </html>

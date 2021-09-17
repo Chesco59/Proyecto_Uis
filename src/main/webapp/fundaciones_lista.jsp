@@ -24,7 +24,9 @@
                 <div class="row mb-3">
                     <label for="txt1" class="col-form-label col-sm-2">Filtrar por nombre</label>
                     <input type="text" class="col-form-control col-sm-9" id="txt1" name="txt1" value="">
+                    
                     <button type="button" class="btn btn-light col-sm-1"><i class="bi bi-search"></i></button>
+                    <a href=fundaciones_form.jsp> <button class="btn btn-primary" type="submit" id="btnSubmit" name="btnSubmit" value="regresar" >Nueva Fundación</button></a><!-- comment -->
                 </div>
 
                 <form>
