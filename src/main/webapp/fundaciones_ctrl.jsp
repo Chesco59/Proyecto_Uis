@@ -40,7 +40,7 @@
                 boolean guardado = coleccion.guardarFundacion(j);
                 if (guardado == true) {
                     
-                        // JOptionPane.showMessageDialog(null, "Información guardada con éxito !");
+                         //JOptionPane.showMessageDialog(null, "Información guardada con éxito !");
                     out.println("Nueva Fundacion guardada con éxito");
                 }
                 else {

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-17T10:42:54 COT" name="test.TestGeneral" finished-at="2021-09-17T10:42:55 COT" duration-ms="1142">
+  <suite started-at="2021-09-18T10:41:19 COT" name="test.TestGeneral" finished-at="2021-09-18T10:41:20 COT" duration-ms="1110">
     <groups>
     </groups>
-    <test started-at="2021-09-17T10:42:54 COT" name="Command line test" finished-at="2021-09-17T10:42:55 COT" duration-ms="1142">
+    <test started-at="2021-09-18T10:41:19 COT" name="Command line test" finished-at="2021-09-18T10:41:20 COT" duration-ms="1110">
       <class name="test.TestGeneral">
-        <test-method signature="verificarCargaFundaciones()[pri:0, instance:test.TestGeneral@6a192cfe]" started-at="2021-09-17T10:42:54 COT" name="verificarCargaFundaciones" finished-at="2021-09-17T10:42:55 COT" duration-ms="973" status="PASS">
+        <test-method signature="verificarCargaFundaciones()[pri:0, instance:test.TestGeneral@6a192cfe]" started-at="2021-09-18T10:41:19 COT" name="verificarCargaFundaciones" finished-at="2021-09-18T10:41:20 COT" duration-ms="976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificarCargaFundaciones -->
-        <test-method signature="verificarConexion()[pri:0, instance:test.TestGeneral@6a192cfe]" started-at="2021-09-17T10:42:55 COT" name="verificarConexion" finished-at="2021-09-17T10:42:55 COT" duration-ms="103" status="PASS">
+        <test-method signature="verificarConexion()[pri:0, instance:test.TestGeneral@6a192cfe]" started-at="2021-09-18T10:41:20 COT" name="verificarConexion" finished-at="2021-09-18T10:41:20 COT" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verificarConexion -->
