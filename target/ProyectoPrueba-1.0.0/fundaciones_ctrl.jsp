@@ -1,7 +1,7 @@
 <%-- 
     Document   : fundaciones_ctrl
     Created on : 15/09/2021, 10:56:17 a. m.
-    Author     : E5-473
+    Author     : Ariel Fundalink
 --%>
 
 <%@page import="javax.swing.JOptionPane"%>
