@@ -27,7 +27,7 @@
             String Representante = request.getParameter("txtRepresentante");
             String Url = request.getParameter("txtUrl");
             String Telefono = request.getParameter("txtTelefono");
-            String Fundacionescol = request.getParameter("txtFundacionescol");
+            String Fundacionescol = request.getParameter("txtTipo");
             String Username = request.getParameter("txtUsername");
             String Password = request.getParameter("txtPassword");
             

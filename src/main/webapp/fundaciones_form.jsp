@@ -42,10 +42,30 @@ Logo de Fundalink
 
 </h2>
     <hr>  
+    
+    
 <h1 style="text-align:center"> 
 Crear una Nueva Fundación 
 
 </h1>
+    <% 
+                String accion= request.getParameter("accion");
+                if (accion.equals("editar")){
+                    int id = Integer.parseInt(request.getParameter("id"));
+                    out.println("Id recibido: "+id);
+                }
+                
+                if (accion.equals("nuevo")){
+                out.println("Vas a escribir un registro nuevo");
+                }
+                
+                if (accion.equals("borrar")){
+                    int id = Integer.parseInt(request.getParameter("id"));
+                    out.println("Vas a borrar el registro: "+id);
+                    
+                 }
+                out.println("Acción recibida: "+accion);
+            %>
   <!-- INICIO FORMULARIO HTML -->
 <form method="POST" action="fundaciones_ctrl.jsp">
    
@@ -118,12 +138,12 @@ Crear una Nueva Fundación
             <div class="col-ms-4">
             <div  class="p-2">
             <label >Tipo de Fundación:<span class="red">*</span></label>
-            <select class="custom-select"  required>
+            <select class="custom-select" name="txtTipo" required>
                 <option selected disabled value="">Selecciona el tipo</option>
-                <option value="Tipo 1">Sociales</option>
-                <option value="Tipo 2">Ambientales</option>
-                <option value="Tipo 3">Culturales</option>
-                <option value="Tipo 4">Otras</option>
+                <option value="Sociales">Sociales</option>
+                <option value="Ambientales">Ambientales</option>
+                <option value="Culturales">Culturales</option>
+                <option value="Otras">Otras</option>
             </select>
             </div>
         </div>
@@ -131,18 +151,6 @@ Crear una Nueva Fundación
     </div>
     
    
-   
-
-<div class="form-row">
-        
-    </div>
-    <div class="form-row">
-      <div class="mx-auto">
-          <div class="p-4"></div>
-    	
-    </div>
-</div>
-</div>
     <div class="form-row">
 	<div class="mx-auto">
         <button class="btn btn-primary" type="submit" id="btnSubmit" name="btnSubmit" value="nuevo">Guardar</button>
